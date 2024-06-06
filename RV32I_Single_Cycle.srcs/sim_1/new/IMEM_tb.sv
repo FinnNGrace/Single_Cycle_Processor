@@ -18,23 +18,6 @@ module IMEM_tb;
       forever #5 clk_i = ~clk_i;
     end  
 			
-//	initial begin
-//	   rst_ni = 0;
-//	   #7
-//	   rst_ni = 1;
-//	   #3
-//	   pc = 0;
-//	   #10
-//	   pc = 4; 
-//	   #10
-//	   pc = 8;
-//	   #10
-//	   pc = 12;
-//	   #10
-//	   pc = 16;
-     
-//	   #100 $finish;
-//	end
 	
 	initial begin
 	rst_ni = 0;

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1716397955" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1717338787" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/wrapper.dcp">
   <File Type="PA-TCL" Name="wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="singlecycle_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="singlecycle_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/stopwatch_counter.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ALU.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -136,6 +129,14 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/wrapper.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stopwatch_counter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

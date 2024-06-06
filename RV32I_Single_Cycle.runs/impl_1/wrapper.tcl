@@ -123,7 +123,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param general.maxThreads 8
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 8  }
   open_checkpoint wrapper_routed.dcp
